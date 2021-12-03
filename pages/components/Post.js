@@ -13,13 +13,6 @@ function Post({ name, message, email, postImage, image, timestamp }) {
 						height={40}
 						alt=""
 					/>
-					{/* <img
-						className="rounded-full"
-						src={image}
-						width={40}
-						height={40}
-						alt=""
-					/> */}
 					<div>
 						<p className="font-medium">{name}</p>
 

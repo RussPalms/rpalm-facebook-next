@@ -4,7 +4,6 @@ import { EmojiHappyIcon } from "@heroicons/react/outline";
 import { CameraIcon, VideoCameraIcon } from "@heroicons/react/solid";
 import { useRef, useState } from "react";
 import { db, storage } from "../../firebase";
-// import firebase from "firebase";
 import firebase from "firebase/compat/app";
 
 function InputBox() {
@@ -112,11 +111,6 @@ function InputBox() {
 							src={imageToPost}
 							alt=""
 						/>
-						{/* <img
-							className="h-10 object-contain"
-							src={imageToPost}
-							alt=""
-						/> */}
 						<p className="text-xs text-red-500 text-center">
 							Remove
 						</p>
