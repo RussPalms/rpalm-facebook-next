@@ -54,7 +54,7 @@ function Header() {
 					<Image
 						onClick={signOut}
 						className="rounded-full cursor-pointer"
-						src={session.user.image}
+						src={session?.user.image}
 						alt=""
 						width="40"
 						height="40"
@@ -62,7 +62,7 @@ function Header() {
 					/>
 
 					<p className="hidden lg:inline-flex whitespace-nowrap font-semibold pr-3">
-						{session.user.name}
+						{session?.user.name}
 					</p>
 					<ViewGridIcon className="icon" />
 					<ChatIcon className="icon" />
