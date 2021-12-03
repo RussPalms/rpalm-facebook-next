@@ -10,4 +10,12 @@ export default NextAuth({
 		}),
 		// ...add more providers here
 	],
+	adapter: Adapters.Prisma.Adapter({ prisma }),
+	session: {
+		jwt: true,
+	},
+	secret: process.env.SECRET,
+	jwt: {
+		secret: process.env.JWT_SECRET,
+	},
 });
